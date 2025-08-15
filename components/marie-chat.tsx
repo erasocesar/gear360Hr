@@ -61,7 +61,7 @@ export default function MarieChat({ isOpen, onClose }: MarieChatProps) {
     setInputMessage("");
 
     try {
-      const response = await fetch("https://isagis.app.n8n.cloud/webhook/c9b4472d-b7a4-439d-a2b2-fa88ece909d2", {
+      const response = await fetch("https://n8n.isagis.com/webhook/c9b4472d-b7a4-439d-a2b2-fa88ece909d2", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
